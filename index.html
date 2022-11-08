@@ -95,9 +95,9 @@
             <li> The cards on the left are all of the cards available. </li>
             <li> The cards on the right are all of the cards you have selected to print. </li>
             <li> Type part of a card name into the 'filter' to limit the cards you see on the left.</li>
-            <li> Select a card on the left and press 'Add (BB) >' to add it to the list on the right.</li>
-            <li> Select a card on the right an press "Remove" to remove it from your list. </li>
-            <li> Click "ADD (WB) >" to add a white-border version of the card (to save a bit on ink).</li>
+            <li> Select one or more cards on the left and press 'Add >' (or double clicking) to add it to the list on the right.</li>
+            <li> Select one or more cards on the right an press "< Remove" (or double clicking) to remove it from your list. </li>
+            <li> Use the "Spacing Options" link at the bottom to add space between the cards, if you so desire (units are in pixels).</li>
             <li> Click 'Generate PDF' when you are ready.</li>
             <div>
                 <p class="vkit-instructions-note">The PDF may take a little while to generate</p>
@@ -141,10 +141,10 @@
         <!-- Middle Column -->
         <div class="vkit-button-column">
             <div class="vkit-middle-button-holder">
-                <button class='btn vkit-button' onclick='addSelectedCards(false)'>Add (BB) &gt; </button>
+                <button class='btn vkit-button' onclick='addSelectedCards(false)'>Add &gt; </button>
                 <div class="vkit-small-spacer"></div>
-                <button class='vkit-button' onclick='addSelectedCards(true)'>Add (WB) &gt; </button>
-                <div class="vkit-small-spacer"></div>
+                <!-- <button class='vkit-button' onclick='addSelectedCards(true)'>Add (WB) &gt; </button>
+                <div class="vkit-small-spacer"></div> -->
                 <button class='vkit-button' onclick='removeSelectedCards()'> &lt; Remove</button>
                 <div class="vkit-small-spacer"></div>
                 <button class='vkit-button' onclick="loadEventFromFile()">Load GEMP Deck</button>

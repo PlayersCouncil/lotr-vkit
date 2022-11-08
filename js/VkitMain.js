@@ -135,10 +135,6 @@ function addSelectedCards(isWhiteBorder) {
   jQuery("#selectAdds").find(":selected").each(function() {
       var cardToAdd = jQuery(this).val();
 
-      if (isWhiteBorder) {
-          cardToAdd += " (WB)";
-      }
-
       var inserted = false;
       for (var j = 0; j < cardsForPdf.length; j++) {
           if (cardsForPdf[j] == cardToAdd) {
@@ -356,7 +352,6 @@ function generatePdf() {
 
           var size = "huge";
           var cardName = cardsForPdf[currentCardIndex];
-          var isWhiteBorder = (-1 != cardName.indexOf(" (WB)"));
           var cardPath = allCardNames[cardName][size];
           console.log("image: " + cardPath );
 
@@ -557,6 +552,7 @@ function editDistance(s1, s2) {
 
 
 var allCardNames  = [];
+var isWhiteBorder = true;
 
 jQuery(document).ready(function() {
 

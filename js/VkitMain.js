@@ -552,7 +552,7 @@ function editDistance(s1, s2) {
 
 
 var allCardNames  = [];
-var isWhiteBorder = true;
+var isWhiteBorder = false;
 
 jQuery(document).ready(function() {
 

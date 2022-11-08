@@ -1,8 +1,8 @@
 var MARGIN_LEFT = 0.35;
-var MARGIN_TOP = 0.35;
+var MARGIN_TOP = 0.25;
 
-var MAX_PAGE_BOTTOM = 11.0 - MARGIN_LEFT;
-var MAX_PAGE_RIGHT = 8.5 - MARGIN_TOP;
+var MAX_PAGE_BOTTOM = 11.0 - MARGIN_TOP / 2 ;
+var MAX_PAGE_RIGHT = 8.5 - MARGIN_LEFT ;
 
 var CARD_WIDTH = 2.49;
 
@@ -84,19 +84,20 @@ function updateMatchingCards() {
 
 
     matchingCards.length = 0;
-    for (i = 0; i < allCardNames.length; i++) {
+    var cardNames = Object.keys(allCardNames).sort();
+    for (i = 0; i < cardNames.length; i++) {
         var matches = false;
 
         var lowercaseFilterText = filterText.toLowerCase();
 
         if ("" === lowercaseFilterText) {
             matches = true;
-        } else if (-1 != allCardNames[i].toLowerCase().indexOf(lowercaseFilterText)) {
+        } else if (-1 != cardNames[i].toLowerCase().indexOf(lowercaseFilterText)) {
             matches = true;
         }
 
         if (matches) {
-            matchingCards.push(allCardNames[i]);
+            matchingCards.push(cardNames[i]);
         }
     }
 
@@ -113,6 +114,10 @@ function updateMatchingCards() {
     if (matchingCards.length > 0) {
       jQuery('#selectAdds > option:eq(0)').prop('selected', true)
     }
+    
+    jQuery("#selectAdds option").dblclick(function() {
+      addSelectedCards(false);
+    });
 
 }
 
@@ -155,6 +160,10 @@ function addSelectedCards(isWhiteBorder) {
         indexToSelect = cardsForPdf.length - 1;
       }
       jQuery('#selectedRemoves > option').eq(indexToSelect).prop('selected', true);
+      
+      jQuery("#selectedRemoves option").dblclick(function() {
+        removeSelectedCards();
+      });
       
   });
 
@@ -334,7 +343,7 @@ function generatePdf() {
               bottom: MARGIN_TOP
           };
           printCards(doc, fullTemplates, lastPrintPoint);
-          printCards(doc, halfSlips, lastPrintPoint);
+          //printCards(doc, halfSlips, lastPrintPoint);
 
           doc.output('save', 'vkitPdf.pdf');
 
@@ -345,9 +354,10 @@ function generatePdf() {
 
         } else {
 
+          var size = "huge";
           var cardName = cardsForPdf[currentCardIndex];
           var isWhiteBorder = (-1 != cardName.indexOf(" (WB)"));
-          var cardPath = allCardImages[cardName];
+          var cardPath = allCardNames[cardName][size];
           console.log("image: " + cardPath );
 
           // Async function to keep adding new cards until finished
@@ -468,7 +478,7 @@ function loadCardFromGempExport(fileContents) {
 function addCardsByNames(cardNames) {
 
   const strippedCardNames = cardNames.map(cardName => cardName.replace(/[^a-zA-Z0-9]/g, ''));
-  var strippedActualCards = allCardNames.map(actualCard => actualCard.replace(/[^a-zA-Z0-9]/g, ''));
+  var strippedActualCards = allCardNames.map(actualCard => actualCard.name.replace(/[^a-zA-Z0-9]/g, ''));
 
   // Try to find all the stripped cards in the list of normal cards
   strippedCardNames.forEach(card => {
@@ -547,15 +557,13 @@ function editDistance(s1, s2) {
 
 
 var allCardNames  = [];
-var allCardImages = [];
 
 jQuery(document).ready(function() {
 
   console.log("After Loaded");
 
     jQuery.getJSON('allCards.json', function(data) {
-      allCardNames  = data.allCardNames;
-      allCardImages = data.allCardImages;
+      allCardNames  = data.allCards;
       console.log("allCardNames:", JSON.stringify(allCardNames));
       popuplateSpacingFields();
       updateMatchingCards();

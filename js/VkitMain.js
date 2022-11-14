@@ -350,7 +350,7 @@ function generatePdf() {
 
         } else {
 
-          var size = "huge";
+          var size = jQuery('input[name=size]:checked', '#sizeForm').val();
           var cardName = cardsForPdf[currentCardIndex];
           var cardPath = allCardNames[cardName][size];
           console.log("image: " + cardPath );
@@ -553,6 +553,7 @@ function editDistance(s1, s2) {
 
 var allCardNames  = [];
 var isWhiteBorder = false;
+var size = "original";
 
 jQuery(document).ready(function() {
 

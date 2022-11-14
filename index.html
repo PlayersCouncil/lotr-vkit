@@ -98,6 +98,7 @@
             <li> Select one or more cards on the left and press 'Add >' (or double clicking) to add it to the list on the right.</li>
             <li> Select one or more cards on the right an press "< Remove" (or double clicking) to remove it from your list. </li>
             <li> Use the "Spacing Options" link at the bottom to add space between the cards, if you so desire (units are in pixels).</li>
+            <li> If you want a quality increase over Decipher's original card size, then use the Double or Huge size.  Original is ~6 MB per page, Double is ~25 MB per page, and Huge is a whopping 100 MB PER PAGE.</li>
             <li> Click 'Generate PDF' when you are ready.</li>
             <div>
                 <p class="vkit-instructions-note">The PDF may take a little while to generate</p>
@@ -148,6 +149,15 @@
                 <button class='vkit-button' onclick='removeSelectedCards()'> &lt; Remove</button>
                 <!-- <div class="vkit-small-spacer"></div>
                 <button class='vkit-button' onclick="loadEventFromFile()">Load GEMP Deck</button> -->
+                <br><br>
+                <form id="sizeForm">
+                  <fieldset>
+                    <legend>Choose Size</legend>
+                    <label><input type="radio" name="size" value="original" checked="checked"/> Original (1x)</label> <br />
+                    <label><input type="radio" name="size" value="double" /> Double (2x)</label> <br />
+                    <label><input type="radio" name="size" value="huge" /> Huge (4x) (SIZE WARNING)</label> <br />
+                  </fieldset>
+                </form>
             </div>
         </div>
         
@@ -207,7 +217,7 @@
 
 
     <div class="vkit-post-forum-note">
-        For issues or requests, please post in the forums.
+        For issues or requests, please contact ketura <a href="https://lotrtcgpc.net/discord">on the PC Discord</a>.
     </div>
 
     <div style="position:absolute; right:5px; bottom:5px">

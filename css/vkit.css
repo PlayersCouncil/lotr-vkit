@@ -221,3 +221,7 @@
     border:thin solid black;
     display:none
 }
+
+fieldset {
+    border:thin solid rgb(255, 167, 74);
+}

@@ -189,6 +189,7 @@ function removeSelectedCards() {
     });
 }
 
+var TO_RADIANS = Math.PI/180; 
 
 function convertImgToBase64(isWhiteBorder, url, canvas, img, callback) {
 
@@ -198,15 +199,29 @@ function convertImgToBase64(isWhiteBorder, url, canvas, img, callback) {
     canvas.height = img.height;
     canvas.width = img.width;
     var context = canvas.getContext('2d');
-
-    context.drawImage(img, 0, 0);
+    
+    var aspectRatio = canvas.height / canvas.width;
+    if(aspectRatio < 1) //card is horizontal
+    {
+      canvas.width = img.height;
+      canvas.height = img.width;
+      context = canvas.getContext('2d');
+      context.translate(0, canvas.height); 
+      context.rotate(-90 * TO_RADIANS);
+      context.drawImage(img, 0, 0);
+      aspectRatio = canvas.height / canvas.width;
+    }
+    else
+    {
+      context.drawImage(img, 0, 0);
+    }
 
     if (isWhiteBorder) {
         convertCanvasToWhiteBorder2(canvas);
     }
 
     var dataURL = canvas.toDataURL('image/png');
-    var aspectRatio = canvas.height / canvas.width;
+    
     callback(dataURL, aspectRatio);
   };
   img.onerror = function() {
@@ -339,7 +354,7 @@ function generatePdf() {
               bottom: MARGIN_TOP
           };
           printCards(doc, fullTemplates, lastPrintPoint);
-          //printCards(doc, halfSlips, lastPrintPoint);
+          printCards(doc, halfSlips, lastPrintPoint);
 
           doc.output('save', 'vkitPdf.pdf');
 

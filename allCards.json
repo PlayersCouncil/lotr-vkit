@@ -806,95 +806,95 @@
 		},
 
 		"08_102 - Great Hill Troll (Errata)": {
-			"name": "08_102 - Great Hill Troll",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN08E103.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN08E103.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN08E103.1_card.jpg"
-		},
+      "name": "08_102 - Great Hill Troll",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN08E102.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN08E102.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN08E102.1_card.jpg"
+    },
 
-		"08_103 - Grond, Hammer of the Underworld (Errata)": {
-			"name": "08_103 - Grond, Hammer of the Underworld",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E008.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E008.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E008.1_card.jpg"
-		},
+    "08_103 - Grond, Hammer of the Underworld (Errata)": {
+      "name": "08_103 - Grond, Hammer of the Underworld",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN08E103.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN08E103.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN08E103.1_card.jpg"
+    },
 
-		"10_008 - Cirdan, The Shipwright (Errata)": {
-			"name": "10_008 - Cirdan, The Shipwright",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E017.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E017.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E017.1_card.jpg"
-		},
+    "10_008 - Cirdan, The Shipwright (Errata)": {
+      "name": "10_008 - Cirdan, The Shipwright",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E008.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E008.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E008.1_card.jpg"
+    },
 
-		"10_017 - Out of the High Airs (Errata)": {
-			"name": "10_017 - Out of the High Airs",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN15E015.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN15E015.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN15E015.1_card.jpg"
-		},
+    "10_017 - Out of the High Airs (Errata)": {
+      "name": "10_017 - Out of the High Airs",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E017.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E017.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E017.1_card.jpg"
+    },
 
-		"15_015 - Focus (Errata)": {
-			"name": "15_015 - Focus",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN15E062.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN15E062.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN15E062.1_card.jpg"
-		},
+    "15_015 - Focus (Errata)": {
+      "name": "15_015 - Focus",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN15E015.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN15E015.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN15E015.1_card.jpg"
+    },
 
-		"15_062 - Ithilien Blade (Errata)": {
-			"name": "15_062 - Ithilien Blade",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E012.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E012.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E012.1_card.jpg"
-		},
+    "15_062 - Ithilien Blade (Errata)": {
+      "name": "15_062 - Ithilien Blade",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN15E062.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN15E062.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN15E062.1_card.jpg"
+    },
 
-		"18_012 - Gil-galad, High King of the Noldor (Errata)": {
-			"name": "18_012 - Gil-galad, High King of the Noldor",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E029.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E029.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E029.1_card.jpg"
-		},
+    "18_012 - Gil-galad, High King of the Noldor (Errata)": {
+      "name": "18_012 - Gil-galad, High King of the Noldor",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E012.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E012.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E012.1_card.jpg"
+    },
 
-		"18_029 - Deceit (Errata)": {
-			"name": "18_029 - Deceit",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E050.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E050.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E050.1_card.jpg"
-		},
+    "18_029 - Deceit (Errata)": {
+      "name": "18_029 - Deceit",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E029.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E029.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E029.1_card.jpg"
+    },
 
-		"18_050 - The Faithful Stone (Errata)": {
-			"name": "18_050 - The Faithful Stone",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E079.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E079.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E079.1_card.jpg"
-		},
+    "18_050 - The Faithful Stone (Errata)": {
+      "name": "18_050 - The Faithful Stone",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E050.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E050.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E050.1_card.jpg"
+    },
 
-		"18_079 - Frenzy of Arrows (Errata)": {
-			"name": "18_079 - Frenzy of Arrows",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E096.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E096.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E096.1_card.jpg"
-		},
+    "18_079 - Frenzy of Arrows (Errata)": {
+      "name": "18_079 - Frenzy of Arrows",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E079.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E079.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E079.1_card.jpg"
+    },
 
-		"18_096 - Erkenbrand's Horn (Errata)": {
-			"name": "18_096 - Erkenbrand's Horn",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E112.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E112.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E112.1_card.jpg"
-		},
+    "18_096 - Erkenbrand's Horn (Errata)": {
+      "name": "18_096 - Erkenbrand's Horn",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E096.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E096.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E096.1_card.jpg"
+    },
 
-		"18_112 - Scouring of the Shire (Errata)": {
-			"name": "18_112 - Scouring of the Shire",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN19E038.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN19E038.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN19E038.1_card.jpg"
-		},
+    "18_112 - Scouring of the Shire (Errata)": {
+      "name": "18_112 - Scouring of the Shire",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN18E112.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN18E112.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN18E112.1_card.jpg"
+    },
 
-		"19_038 - Ulaire Nertea, Dark Horseman (Errata)": {
-			"name": "19_038 - Ulaire Nertea, Dark Horseman",
-			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN08E102.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN08E102.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN08E102.1_card.jpg"
-		},
+    "19_038 - Ulaire Nertea, Dark Horseman (Errata)": {
+      "name": "19_038 - Ulaire Nertea, Dark Horseman",
+      "original": "https://i.lotrtcgpc.net/errata/LOTR-EN19E038.1_card.jpg",
+      "double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN19E038.1_card.jpg",
+      "huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN19E038.1_card.jpg"
+    },
 		
 		
 		

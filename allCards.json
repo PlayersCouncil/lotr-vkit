@@ -1439,7 +1439,12 @@
 		},
 
 		
-		
+		"00_000 - Card Back": {
+      "name": "00_000 - Card Back",
+      "original": "https://i.lotrtcgpc.net/decipher/LOTR00000.jpg",
+      "double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN00000.jpg",
+      "huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN00000.jpg"
+    },
 		
 		"AFD - Faramir, Captain of Ithilien (AFD)": {
 			"name": "AFD - Faramir, Captain of Ithilien (AFD)",

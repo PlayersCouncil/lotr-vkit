@@ -8,6 +8,8 @@
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV0S001.0_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV0S001.0_card.jpg"
 		},
+		
+		
 
 		"V1_001 - Hospitality of the Dwarves": {
 			"name": "V1_001 - Hospitality of the Dwarves",
@@ -456,6 +458,9 @@
 			"double": "https://i.lotrtcgpc.net/sets/vset1/V1_064_double.jpg",
 			"huge": "https://i.lotrtcgpc.net/sets/vset1/V1_064_huge.jpg"
 		},
+		
+		
+		
 
 		"01_007 - Dwarf Guard (Errata)": {
 			"name": "01_007 - Dwarf Guard",
@@ -557,9 +562,9 @@
 
 		"01_059 - Shoulder to Shoulder (Errata)": {
 			"name": "01_059 - Shoulder to Shoulder",
-			"original": "https://i.lotrtcgpc.net/errata/decipher/LOTR01059/1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/errata/decipher/double/LOTR-EN01059.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/errata/decipher/huge/LOTR-EN01059.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E059.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E059.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E059.1_card.jpg"
 		},
 
 		"01_068 - The White Arrows of Lorien (Errata)": {
@@ -858,9 +863,9 @@
 
 		"03_027 - Vilya (Errata)": {
 			"name": "03_027 - Vilya",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR03027.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN03027.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN03027.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E027.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E027.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E027.1_card.jpg"
 		},
 
 		"03_038 - Aragorn, Heir to the White City (Errata)": {
@@ -998,9 +1003,9 @@
 
 		"04_073 - Legolas, Dauntless Hunter (Errata)": {
 			"name": "04_073 - Legolas, Dauntless Hunter",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR04073.2_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN04073.2_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN04073.2_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN04E073.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN04E073.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN04E073.2_card.jpg"
 		},
 
 		"04_146 - Come Down (Errata)": {
@@ -1061,9 +1066,9 @@
 
 		"07_190 - Morgul Destroyer (Errata)": {
 			"name": "07_190 - Morgul Destroyer",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR07190.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN07190.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN07190.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN07E190.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN07E190.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN07E190.1_card.jpg"
 		},
 
 		"07_256 - They Sang as They Slew (Errata)": {
@@ -1103,9 +1108,9 @@
 
 		"08_043 - Shadow Host (Errata)": {
 			"name": "08_043 - Shadow Host",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR08043.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN08043.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN08043.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN08E043.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN08E043.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN08E043.1_card.jpg"
 		},
 
 		"08_048 - Swept Away (Errata)": {
@@ -1131,9 +1136,9 @@
 
 		"08_059 - Corsair War Galley (Errata)": {
 			"name": "08_059 - Corsair War Galley",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR08059.2_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN08059.2_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN08059.2_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN08E059.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN08E059.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN08E059.2_card.jpg"
 		},
 
 		"08_091 - Rohirrim Army (Errata)": {
@@ -1159,23 +1164,23 @@
 
 		"09_016 - Glorfindel, Revealed in Wrath (Errata)": {
 			"name": "09_016 - Glorfindel, Revealed in Wrath",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR09016.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN09016.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN09016.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN09E016.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN09E016.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN09E016.1_card.jpg"
 		},
 
 		"09_026 - Radagast, The Brown (Errata)": {
 			"name": "09_026 - Radagast, The Brown",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR09026.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN09026.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN09026.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN09E026.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN09E026.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN09E026.1_card.jpg"
 		},
 
 		"09_027 - Sent Back (Errata)": {
 			"name": "09_027 - Sent Back",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR09027.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN09027.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN09027.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN09E027.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN09E027.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN09E027.1_card.jpg"
 		},
 
 		"10_002 - Memories of Darkness (Errata)": {
@@ -1194,9 +1199,9 @@
 
 		"10_011 - Galadriel, Lady Redeemed (Errata)": {
 			"name": "10_011 - Galadriel, Lady Redeemed",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR10011.2_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN10011.2_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN10011.2_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E011.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E011.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E011.2_card.jpg"
 		},
 
 		"10_012 - Glimpse of Fate (Errata)": {
@@ -1215,16 +1220,16 @@
 
 		"10_052 - Under Foot (Errata)": {
 			"name": "10_052 - Under Foot",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR10052.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN10052.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN10052.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E052.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E052.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E052.1_card.jpg"
 		},
 
 		"10_068 - Ulaire Enquea, Thrall of the One (Errata)": {
 			"name": "10_068 - Ulaire Enquea, Thrall of the One",
-			"original": "https://i.lotrtcgpc.net/decipher/LOTR10068.1_card.jpg",
-			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN10068.1_card.jpg",
-			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN10068.1_card.jpg"
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E068.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E068.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E068.1_card.jpg"
 		},
 
 		"10_072 - Eowyn, Lady of Ithilien (Errata)": {
@@ -1492,6 +1497,9 @@
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN19E038.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN19E038.1_card.jpg"
 		},
+		
+		
+		
 
 		"00_000 - Card Back": {
 			"name": "00_000 - Card Back",
@@ -1499,6 +1507,9 @@
 			"double": "https://i.lotrtcgpc.net/decipher/double/LOTR-EN00000.jpg",
 			"huge": "https://i.lotrtcgpc.net/decipher/huge/LOTR-EN00000.jpg"
 		},
+		
+		
+		
 
 		"AFD - Faramir, Captain of Ithilien (AFD)": {
 			"name": "AFD - Faramir, Captain of Ithilien (AFD)",

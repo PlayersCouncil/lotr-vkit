@@ -167,6 +167,7 @@ function addSelectedCards(isWhiteBorder) {
 			
 	});
 
+	updateCardNumbers();
 }
 
 function redrawSelectedCards() {
@@ -190,9 +191,18 @@ function removeSelectedCards() {
 			}
 		}
 	});
+
+	updateCardNumbers();
 }
 
-var TO_RADIANS = Math.PI/180; 
+function updateCardNumbers() {
+	const totalNum = cardsForPdf.length;
+	const uniqueNum = new Set(cardsForPdf).size;
+	document.getElementById('vkit-total-num-cards').innerHTML = totalNum;
+	document.getElementById('vkit-unique-num-cards').innerHTML = uniqueNum;
+}
+
+var TO_RADIANS = Math.PI / 180;
 
 function convertImgToBase64(isWhiteBorder, url, canvas, img, callback) {
 

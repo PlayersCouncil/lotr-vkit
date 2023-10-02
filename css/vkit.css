@@ -211,6 +211,11 @@
     margin-top: 1em;
 }
 
+.vkit-card-list-info {
+    font-weight: bold;
+    display: inline-block;
+}
+
 #printProgressObj {
     position:fixed;
     top: 40%; 
@@ -220,16 +225,6 @@
     background-color: #DADADA; 
     border:thin solid black;
     display:none
-}
-
-#vkit-total-num-cards {
-    font-weight: bold;
-    display: inline-block;
-}
-
-#vkit-unique-num-cards {
-    font-weight: bold;
-    display: inline-block;
 }
 
 fieldset {

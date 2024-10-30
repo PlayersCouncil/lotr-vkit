@@ -211,6 +211,11 @@
     margin-top: 1em;
 }
 
+.vkit-card-list-info {
+    font-weight: bold;
+    display: inline-block;
+}
+
 #printProgressObj {
     position:fixed;
     top: 40%; 

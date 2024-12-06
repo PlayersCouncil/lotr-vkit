@@ -55,3 +55,13 @@ https://www.thinkful.com/learn/github-pull-request-tutorial/Time-to-Submit-Your-
 
 ## Attribution
 This code is a fork of the original here: https://github.com/thomasmarlin/vkit
+
+
+# Running Locally
+For testing and other uses, run the following command in your terminal of choice:
+
+```bash
+python -m http.server 1337
+```
+
+Then open your browser to http://localhost:1337.

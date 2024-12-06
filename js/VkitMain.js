@@ -26,7 +26,7 @@ console.log("Vkit Verison 1.2");
 function popuplateSpacingFields() {
 	$("#inputHorizontalSpacing").val(spacingOptions.horizontalSpacing);
 	$("#inputVerticalSpacing").val(spacingOptions.verticalSpacing);
-	$("#inputBleed").val("0.25");
+	$("#inputBleed").val("0.125");
 }
 
 function getNewSpacingOptions() {

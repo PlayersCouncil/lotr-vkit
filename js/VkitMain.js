@@ -20,6 +20,7 @@ var spacingOptions = {
 var matchingCards = [];
 var cardsForPdf = [];
 var printedCards = [];
+var cardQuality = 'double';
 
 console.log("Vkit Verison 1.2");
 
@@ -167,6 +168,7 @@ function addSelectedCards(isWhiteBorder) {
 			
 	});
 
+	updateCardNumbersAndSizeEstimate();
 }
 
 function redrawSelectedCards() {
@@ -190,9 +192,66 @@ function removeSelectedCards() {
 			}
 		}
 	});
+
+	updateCardNumbersAndSizeEstimate();
 }
 
-var TO_RADIANS = Math.PI/180; 
+function updateCardNumbersAndSizeEstimate() {
+	const totalCardsNum = cardsForPdf.length;
+	document.getElementById('vkit-total-num-cards').innerHTML = totalCardsNum;
+	const distinctCardsNum = new Set(cardsForPdf).size;
+	const sizeEstimatePerDistinctCardInBytes = getCardSizeEstimateInBytes(cardQuality);
+	const sizeEstimateBytes = sizeEstimatePerDistinctCardInBytes * distinctCardsNum;
+	const sizeEstimatePrintable = getHumanReadableFileSize(sizeEstimateBytes);
+	document.getElementById('vkit-size-estimate').innerHTML = sizeEstimatePrintable;
+}
+
+// Receives the quality the user selected as a string
+// Expected values: 'huge', 'double' or 'original'
+function getCardSizeEstimateInBytes(cardQuality) {
+	switch (cardQuality) {
+		case 'original': return 670_000; // 670 KB
+		case 'double': return 2_700_000; // 2.7 MB
+		case 'huge': return 10_800_000; // 10.8 MB
+		default: alert('Unexpected cardQuality value in getCardSizeEstimateInBytes ' + cardQuality); return -1;
+	}
+}
+
+/**
+ * From https://stackoverflow.com/a/14919494
+ *
+ * Format bytes as human-readable text.
+ *
+ * @param bytes Number of bytes.
+ * @param si True to use metric (SI) units, aka powers of 1000. False to use
+ *           binary (IEC), aka powers of 1024.
+ * @param dp Number of decimal places to display.
+ *
+ * @return Formatted string.
+ */
+function getHumanReadableFileSize(bytes, si = false, dp = 1) {
+	const thresh = si ? 1000 : 1024;
+
+	if (Math.abs(bytes) < thresh) {
+		return bytes + ' B';
+	}
+
+	const units = si
+		? ['kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+		: ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'];
+	let u = -1;
+	const r = 10 ** dp;
+
+	do {
+		bytes /= thresh;
+		++u;
+	} while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < units.length - 1);
+
+
+	return bytes.toFixed(dp) + ' ' + units[u];
+}
+
+var TO_RADIANS = Math.PI / 180;
 
 function convertImgToBase64(isWhiteBorder, url, canvas, img, callback) {
 
@@ -438,9 +497,8 @@ function generateZippedPNG() {
 
 		} else {
 
-			var size = $('input[name=size]:checked', '#sizeForm').val();
 			var cardName = cardsForPdf[currentCardIndex];
-			var cardPath = allCardNames[cardName][size];
+			var cardPath = allCardNames[cardName][cardQuality];
 			console.log("image: " + cardPath );
 
 			// Async function to keep adding new cards until finished
@@ -508,9 +566,8 @@ function generatePdf() {
 
 			} else {
 
-				var size = $('input[name=size]:checked', '#sizeForm').val();
 				var cardName = cardsForPdf[currentCardIndex];
-				var cardPath = allCardNames[cardName][size];
+				var cardPath = allCardNames[cardName][cardQuality];
 				console.log("image: " + cardPath );
 
 				// Async function to keep adding new cards until finished
@@ -728,7 +785,11 @@ $(document).ready(function() {
 			$("#bleedForm").show()
 		}
 	});
-	
+
+        $('input[type=radio][name=size]').change(function() {
+                cardQuality = this.value;
+                updateCardNumbersAndSizeEstimate();
+	});
 	
 	jQuery('.numbersOnly').on("input", function () { 
 		this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');

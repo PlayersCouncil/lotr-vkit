@@ -736,7 +736,7 @@ $(document).ready(function() {
 
 	console.log("After Loaded");
 
-		$.getJSON('allCards.json', function(data) {
+		$.getJSON('playtest/allCards.json', function(data) {
 				allCardNames	= data.allCards;
 				//console.log("allCardNames:", JSON.stringify(allCardNames));
 				popuplateSpacingFields();

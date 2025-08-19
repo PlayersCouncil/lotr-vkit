@@ -910,214 +910,354 @@
 			"huge": "https://i.lotrtcgpc.net/sets/v03/huge/LOTR-ENV3E130.0_card.jpg"
 		},
 
-		"08_003 - Blood Runs Chill": {
+				"08_003 - Blood Runs Chill (Errata)": {
 			"name": "08_003 - Blood Runs Chill",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN08E003.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN08E003.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN08E003.1_card.jpg"
 		},
 
-		"02_020 - Secret Sentinels": {
+		"02_020 - Secret Sentinels (Errata)": {
 			"name": "02_020 - Secret Sentinels",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN02E020.2_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN02E020.2_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN02E020.2_card.jpg"
 		},
 
-		"03_027 - Vilya": {
+		"03_027 - Vilya (Errata)": {
 			"name": "03_027 - Vilya",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E027.3_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E027.3_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E027.3_card.jpg"
 		},
 
-		"01_084 - Sleep, Caradhras": {
+		"01_084 - Sleep, Caradhras (Errata)": {
 			"name": "01_084 - Sleep, Caradhras",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E084.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E084.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E084.1_card.jpg"
 		},
 
-		"03_030 - Deep in Thought": {
+		"03_030 - Deep in Thought (Errata)": {
 			"name": "03_030 - Deep in Thought",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E030.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E030.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E030.1_card.jpg"
 		},
 
-		"04_092 - Grown Suddenly Tall": {
+		"04_092 - Grown Suddenly Tall (Errata)": {
 			"name": "04_092 - Grown Suddenly Tall",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN04E092.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN04E092.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN04E092.1_card.jpg"
 		},
 
-		"07_035 - Fool's Hope": {
+		"07_035 - Fool's Hope (Errata)": {
 			"name": "07_035 - Fool's Hope",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN07E035.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN07E035.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN07E035.1_card.jpg"
 		},
 
-		"10_017 - Out of the High Airs": {
+		"10_017 - Out of the High Airs (Errata)": {
 			"name": "10_017 - Out of the High Airs",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E017.2_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E017.2_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E017.2_card.jpg"
 		},
 
-		"06_008 - Too Long Have These Peasants Stood": {
+		"06_008 - Too Long Have These Peasants Stood (Errata)": {
 			"name": "06_008 - Too Long Have These Peasants Stood",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN06E008.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN06E008.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN06E008.1_card.jpg"
 		},
 
-		"01_136 - Saruman's Power": {
+		"01_136 - Saruman's Power (Errata)": {
 			"name": "01_136 - Saruman's Power",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E136.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E136.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E136.1_card.jpg"
 		},
 
-		"04_154 - Grima, Wormtongue": {
+		"04_154 - Grima, Wormtongue (Errata)": {
 			"name": "04_154 - Grima, Wormtongue",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN04E154.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN04E154.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN04E154.1_card.jpg"
 		},
 
-		"05_051 - Grima, Chief Counselor": {
+		"05_051 - Grima, Chief Counselor (Errata)": {
 			"name": "05_051 - Grima, Chief Counselor",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN05E051.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN05E051.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN05E051.1_card.jpg"
 		},
 
-		"10_072 - Eowyn, Lady of Ithilien": {
+		"10_072 - Eowyn, Lady of Ithilien (Errata)": {
 			"name": "10_072 - Eowyn, Lady of Ithilien",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E072.2_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E072.2_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E072.2_card.jpg"
 		},
 
-		"10_011 - Galadriel, Lady Redeemed": {
+		"10_011 - Galadriel, Lady Redeemed (Errata)": {
 			"name": "10_011 - Galadriel, Lady Redeemed",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E011.4_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E011.4_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E011.4_card.jpg"
 		},
 
-		"07_054 - Clever Hobbits": {
+		"07_054 - Clever Hobbits (Errata)": {
 			"name": "07_054 - Clever Hobbits",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN07E054.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN07E054.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN07E054.1_card.jpg"
 		},
 
-		"01_005 - Cleaving Blow": {
+		"01_005 - Cleaving Blow (Errata)": {
 			"name": "01_005 - Cleaving Blow",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E005.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E005.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E005.1_card.jpg"
 		},
 
-		"01_017 - Grimir, Dwarven Elder": {
+		"01_017 - Grimir, Dwarven Elder (Errata)": {
 			"name": "01_017 - Grimir, Dwarven Elder",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E017.2_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E017.2_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E017.2_card.jpg"
 		},
 
-		"01_024 - Stairs of Khazad-dum": {
+		"01_024 - Stairs of Khazad-dum (Errata)": {
 			"name": "01_024 - Stairs of Khazad-dum",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E024.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E024.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E024.1_card.jpg"
 		},
 
-		"01_025 - Still Draws Breath": {
+		"01_025 - Still Draws Breath (Errata)": {
 			"name": "01_025 - Still Draws Breath",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E025.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E025.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E025.1_card.jpg"
 		},
 
-		"02_011 - Make Light of Burdens": {
+		"02_011 - Make Light of Burdens (Errata)": {
 			"name": "02_011 - Make Light of Burdens",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN02E011.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN02E011.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN02E011.1_card.jpg"
 		},
 
-		"03_003 - Mines of Khazad-dum": {
+		"03_003 - Mines of Khazad-dum (Errata)": {
 			"name": "03_003 - Mines of Khazad-dum",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E003.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E003.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E003.1_card.jpg"
 		},
 
-		"03_004 - A Royal Welcome": {
+		"03_004 - A Royal Welcome (Errata)": {
 			"name": "03_004 - A Royal Welcome",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E004.2_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E004.2_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E004.2_card.jpg"
 		},
 
-		"03_005 - Song of Durin": {
+		"03_005 - Song of Durin (Errata)": {
 			"name": "03_005 - Song of Durin",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E005.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E005.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E005.1_card.jpg"
 		},
 
-		"V1_001 - Hospitality of the Dwarves": {
-			"name": "V1_001 - Hospitality of the Dwarves",
+		"V1_1 - Hospitality of the Dwarves (Errata)": {
+			"name": "V1_1 - Hospitality of the Dwarves",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-ENV1E001.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV1E001.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV1E001.1_card.jpg"
 		},
 
-		"V1_002 - Deepest Delvings": {
-			"name": "V1_002 - Deepest Delvings",
+		"V1_2 - Deepest Delvings (Errata)": {
+			"name": "V1_2 - Deepest Delvings",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-ENV1E002.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV1E002.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV1E002.1_card.jpg"
 		},
 
-		"03_067 - The Palantir of Orthanc": {
+		"04_046 - Ever My Heart Rises (Errata)": {
+			"name": "04_046 - Ever My Heart Rises",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN04E046.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN04E046.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN04E046.2_card.jpg"
+		},
+
+		"02_001 - Beneath the Mountains (Errata)": {
+			"name": "02_001 - Beneath the Mountains",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN02E001.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN02E001.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN02E001.2_card.jpg"
+		},
+
+		"02_012 - Realm of Dwarrowdelf (Errata)": {
+			"name": "02_012 - Realm of Dwarrowdelf",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN02E012.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN02E012.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN02E012.2_card.jpg"
+		},
+
+		"03_067 - The Palantir of Orthanc (Errata)": {
 			"name": "03_067 - The Palantir of Orthanc",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E067.2_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E067.2_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E067.2_card.jpg"
 		},
 
-		"04_099 - Roll of Thunder": {
+		"04_099 - Roll of Thunder (Errata)": {
 			"name": "04_099 - Roll of Thunder",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN04E099.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN04E099.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN04E099.1_card.jpg"
 		},
 
-		"04_153 - Grima, Son of Galmod": {
+		"04_153 - Grima, Son of Galmod (Errata)": {
 			"name": "04_153 - Grima, Son of Galmod",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN04E153.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN04E153.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN04E153.1_card.jpg"
 		},
 
-		"07_082 - Cirion": {
+		"07_082 - Cirion (Errata)": {
 			"name": "07_082 - Cirion",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN07E082.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN07E082.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN07E082.1_card.jpg"
 		},
 
-		"09_046 - The Red Arrow": {
+		"09_046 - The Red Arrow (Errata)": {
 			"name": "09_046 - The Red Arrow",
 			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN09E046.1_card.jpg",
 			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN09E046.1_card.jpg",
 			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN09E046.1_card.jpg"
-		}
+		},
+
+		"01_310 - Sam, Faithful Companion (Errata)": {
+			"name": "01_310 - Sam, Faithful Companion",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E310.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E310.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E310.2_card.jpg"
+		},
+
+		"02_104 - Merry, Horticulturalist (Errata)": {
+			"name": "02_104 - Merry, Horticulturalist",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN02E104.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN02E104.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN02E104.2_card.jpg"
+		},
+
+		"V1_54 - Sam, Of Bagshot Row (Errata)": {
+			"name": "V1_54 - Sam, Of Bagshot Row",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-ENV1E054.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV1E054.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV1E054.2_card.jpg"
+		},
+
+		"V1_3 - Gimli, Vengeful Longbeard (Errata)": {
+			"name": "V1_3 - Gimli, Vengeful Longbeard",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-ENV1E003.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV1E003.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV1E003.1_card.jpg"
+		},
+
+		"01_044 - Foul Creation (Errata)": {
+			"name": "01_044 - Foul Creation",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E044.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E044.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E044.1_card.jpg"
+		},
+
+		"V1_66 - Writhing Tentacle (Errata)": {
+			"name": "V1_66 - Writhing Tentacle",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-ENV1E066.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV1E066.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV1E066.1_card.jpg"
+		},
+
+		"10_005 - Arwen, Echo of Luthien (Errata)": {
+			"name": "10_005 - Arwen, Echo of Luthien",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN10E005.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN10E005.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN10E005.1_card.jpg"
+		},
+
+		"V2_77 - Gandalf's Staff, Old Man's Crutch (Errata)": {
+			"name": "V2_77 - Gandalf's Staff, Old Man's Crutch",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-ENV2E077.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV2E077.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV2E077.1_card.jpg"
+		},
+
+		"V2_13 - Gandalf, Lathspell (Errata)": {
+			"name": "V2_13 - Gandalf, Lathspell",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-ENV2E013.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV2E013.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV2E013.2_card.jpg"
+		},
+
+		"03_074 - Uruk Raider (Errata)": {
+			"name": "03_074 - Uruk Raider",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E074.2_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E074.2_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E074.2_card.jpg"
+		},
+
+		"V1_49 - A Shadow of the Past (Errata)": {
+			"name": "V1_49 - A Shadow of the Past",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-ENV1E049.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-ENV1E049.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-ENV1E049.1_card.jpg"
+		},
+
+		"07_080 - Anduril, King's Blade (Errata)": {
+			"name": "07_080 - Anduril, King's Blade",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN07E080.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN07E080.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN07E080.1_card.jpg"
+		},
+
+		"11_230 - Buckland Homestead (Errata)": {
+			"name": "11_230 - Buckland Homestead",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN11E230.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN11E230.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN11E230.1_card.jpg"
+		},
+
+		"13_052 - Little Snuffler (Errata)": {
+			"name": "13_052 - Little Snuffler",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN13E052.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN13E052.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN13E052.1_card.jpg"
+		},
+
+		"13_154 - New Chapter (Errata)": {
+			"name": "13_154 - New Chapter",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN13E154.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN13E154.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN13E154.1_card.jpg"
+		},
+
+		"01_256 - Morgul Hunter (Errata)": {
+			"name": "01_256 - Morgul Hunter",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN01E256.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN01E256.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN01E256.1_card.jpg"
+		},
+
+		"03_109 - Meant to Be Alone (Errata)": {
+			"name": "03_109 - Meant to Be Alone",
+			"original": "https://i.lotrtcgpc.net/errata/LOTR-EN03E109.1_card.jpg",
+			"double": "https://i.lotrtcgpc.net/errata/double/LOTR-EN03E109.1_card.jpg",
+			"huge": "https://i.lotrtcgpc.net/errata/huge/LOTR-EN03E109.1_card.jpg"
+		},
 	}
 }

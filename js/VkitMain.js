@@ -6,6 +6,9 @@ var MARGIN_TOP = 0.25;
 var MAX_PAGE_BOTTOM = 11.0 - MARGIN_TOP / 2 ;
 var MAX_PAGE_RIGHT = 8.5 - MARGIN_LEFT ;
 
+var MAX_PAGE_A4_BOTTOM = 11.69 - MARGIN_TOP / 2 ;
+var MAX_PAGE_A4_RIGHT = 8.27 - MARGIN_LEFT ;
+
 var CARD_WIDTH = 2.49;
 var CARD_HEIGHT = 3.49;
 var CARD_BORDER = 0.120; //1/8 inch, minus a sliver
@@ -320,7 +323,7 @@ function zipCards(folder, cardsToPrint) {
 }
 
 
-function printCards(doc, cardsToPrint, lastPrintPoint) {
+function printCards(doc, cardsToPrint, lastPrintPoint, pageRight, pageBottom) {
 
 	for (var i = 0; i < cardsToPrint.length; i++) {
 		var card = cardsToPrint[i];
@@ -333,7 +336,7 @@ function printCards(doc, cardsToPrint, lastPrintPoint) {
 		var addedPageOrRow = false;
 
 		// If this card exceeds the bottom, add a new page
-		if ((nextTop + calculatedHeight) > MAX_PAGE_BOTTOM) {
+		if ((nextTop + calculatedHeight) > pageBottom) {
 			// Won't fit on page!	Add a new page!
 			//console.log("Next bottom would have been off-page. Figuring out to adapt!");
 			doc.addPage();
@@ -344,13 +347,13 @@ function printCards(doc, cardsToPrint, lastPrintPoint) {
 		}
 
 		// If this card will exceed the width, add a new row OR a new page if needed
-		if ((nextLeft + CARD_WIDTH) > MAX_PAGE_RIGHT) {
+		if ((nextLeft + CARD_WIDTH) > pageRight) {
 			//console.log("Next right edge would have been off screen. Figuring out how to adapt!");
 			nextTop = lastPrintPoint.bottom;
 			nextTop += spacingOptions.verticalSpacingInches;
 
 			// Need to add a new row
-			if ((nextTop + calculatedHeight) < MAX_PAGE_BOTTOM) {
+			if ((nextTop + calculatedHeight) < pageBottom) {
 				// Card will fit in the page in the next rows
 				//console.log("Adding new row!");
 				nextTop = lastPrintPoint.bottom;
@@ -389,8 +392,11 @@ function printCards(doc, cardsToPrint, lastPrintPoint) {
 function generate() {
 	var outputFormat = $('input[name=output]:checked', '#outputForm').val();
 	
-	if(outputFormat === "pdf") {
-		generatePdf();
+	if(outputFormat === "pdf-letter") {
+		generatePdf("letter");
+	}
+	else if (outputFormat === "pdf-a4") {
+		generatePdf("a4");
 	}
 	else if (outputFormat === "bleed") {
 		generateZippedPNG();
@@ -461,7 +467,7 @@ function generateZippedPNG() {
 	addNextCard(0);
 }
 
-function generatePdf() {
+function generatePdf(size) {
 		console.log("Generating PDF...");
 		if (!getNewSpacingOptions()) {
 			return;
@@ -474,7 +480,17 @@ function generatePdf() {
 
 		console.log("Spacing options are at: " + spacingOptions.horizontalSpacingInches	+ " V: " + spacingOptions.verticalSpacingInches);
 
-		var doc = new jspdf.jsPDF('portrait', 'in', [11, 8.5]);
+		var doc = null;
+		
+		if(size == "letter") {
+			doc = new jspdf.jsPDF('portrait', 'in', [11, 8.5]);
+		}
+		else {
+			//A4
+			//doc = new jspdf.jsPDF('portrait', 'mm', [297, 210]);
+			doc = new jspdf.jsPDF('portrait', 'in', [11.69, 8.27]);
+		}
+		
 
 		var cardsWithSizes = [];
 
@@ -491,13 +507,33 @@ function generatePdf() {
 					progressElement.innerHTML = "Finalizing PDF...";
 				}
 
-				var lastPrintPoint = {
-					left: MARGIN_LEFT,
-					top: MARGIN_TOP,
-					right: MARGIN_LEFT,
-					bottom: MARGIN_TOP
-				};
-				printCards(doc, cardsWithSizes, lastPrintPoint);
+				var lastPrintPoint = {};
+				var pageBottom = 0;
+				var pageRight = 0;
+				
+				if(size == "letter") {
+					lastPrintPoint = {
+						left: MARGIN_LEFT,
+						top: MARGIN_TOP,
+						right: MARGIN_LEFT,
+						bottom: MARGIN_TOP
+					};
+					pageBottom = MAX_PAGE_BOTTOM;
+					pageRight = MAX_PAGE_RIGHT;
+				}
+				else {
+					//A4
+					lastPrintPoint = {
+						left: MARGIN_LEFT,
+						top: MARGIN_TOP,
+						right: MARGIN_LEFT,
+						bottom: MARGIN_TOP
+					};
+					pageBottom = MAX_PAGE_A4_BOTTOM;
+					pageRight = MAX_PAGE_A4_RIGHT;
+				}
+				
+				printCards(doc, cardsWithSizes, lastPrintPoint, pageRight, pageBottom);
 
 				doc.output('save', 'vkitPdf.pdf');
 

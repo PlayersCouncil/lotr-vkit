@@ -57,6 +57,23 @@
     </div>
     
     
+    <!-- Gemp Deck Import Row -->
+    <div class="vkit-content-flex" style="margin-bottom: 15px;">
+        <div class="vkit-button-column">
+            <label>Import from Gemp Deck URL:</label>
+            <input id='gempDeckUrl' 
+                   type='text' 
+                   placeholder='https://play.lotrtcgpc.net/share/deck?id=...'
+                   style='width:100%'
+                   tabindex="0">
+            <button class='btn vkit-button' onclick='importGempDeck()'>Import Deck</button>
+        </div>
+        <div class="vkit-column">
+            <span id='importStatus'></span>
+        </div>
+    </div>
+    
+    
     <!-- Card Filter Row -->
     <div class="vkit-content-flex">
         
@@ -75,6 +92,8 @@
         <div class="vkit-button-column">
         </div>
         <div class="vkit-column">
+            <button class='vkit-button' onclick='clearSelection()'>Clear Selection</button>
+            <div class="vkit-small-spacer"></div>
         </div>
     </div>
     

@@ -748,11 +748,257 @@ function editDistance(s1, s2) {
 }
 
 
+// ============================================
+// GEMP DECK IMPORT FUNCTIONALITY
+// ============================================
+
+/**
+ * Main entry point for importing a Gemp deck
+ */
+async function importGempDeck() {
+    const urlInput = document.getElementById('gempDeckUrl');
+    const statusSpan = document.getElementById('importStatus');
+    const url = urlInput.value.trim();
+    
+    if (!url) {
+        statusSpan.textContent = 'Please enter a Gemp deck URL';
+        statusSpan.style.color = 'red';
+        return;
+    }
+    
+    // Validate it looks like a Gemp share URL
+    if (!url.includes('lotrtcgpc.net/share/deck') && !url.includes('lotrtcgpc.net/gemp-lotr-server/deck/html')
+        && !url.includes('lotrtcgpc.net/gemp-lotr-server/deck/libraryHtml')) {
+        statusSpan.textContent = 'URL does not appear to be a Gemp deck share link';
+        statusSpan.style.color = 'red';
+        return;
+    }
+    
+    statusSpan.textContent = 'Fetching deck...';
+    statusSpan.style.color = 'black';
+    
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch deck: ${response.status}`);
+        }
+        
+        const html = await response.text();
+        const cards = parseGempDeckHtml(html);
+        
+        if (cards.length === 0) {
+            statusSpan.textContent = 'No cards found in deck';
+            statusSpan.style.color = 'red';
+            return;
+        }
+        
+        const result = addCardsToSelection(cards);
+        
+        statusSpan.textContent = `Imported ${result.added} cards (${result.notFound} not found)`;
+        statusSpan.style.color = result.notFound > 0 ? 'orange' : 'green';
+        
+        if (result.missingCards.length > 0) {
+            console.warn('Cards not found in VKIT:', result.missingCards);
+        }
+        
+    } catch (error) {
+        console.error('Error importing deck:', error);
+        statusSpan.textContent = `Error: ${error.message}`;
+        statusSpan.style.color = 'red';
+    }
+}
+
+/**
+ * Parse the Gemp deck HTML and extract card information
+ * @param {string} html - Raw HTML from Gemp share endpoint
+ * @returns {Array} Array of {count, imageUrl, name} objects
+ */
+function parseGempDeckHtml(html) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const cards = [];
+    
+    // Find all tooltip spans (each card entry)
+    const tooltips = doc.querySelectorAll('span.tooltip');
+    
+    tooltips.forEach(tooltip => {
+        const img = tooltip.querySelector('img.ttimage');
+        if (!img) return;
+        
+        const imageUrl = img.getAttribute('src');
+        const cardName = tooltip.childNodes[0]?.textContent?.trim();
+        
+        // Check for count prefix (e.g., "2x " before the tooltip)
+        let count = 1;
+        const previousText = tooltip.previousSibling?.textContent || '';
+        const countMatch = previousText.match(/(\d+)x\s*$/);
+        if (countMatch) {
+            count = parseInt(countMatch[1], 10);
+        }
+        
+        if (imageUrl && cardName) {
+            cards.push({ count, imageUrl, name: cardName });
+        }
+    });
+    
+    return cards;
+}
+
+/**
+ * Parse a Gemp/wiki image URL to extract set and card number
+ * @param {string} url - Image URL like "https://wiki.lotrtcgpc.net/images/LOTR-EN01S290.0_card.jpg"
+ * @returns {Object|null} {set, cardNum, isErrata} or null if parsing fails
+ */
+function parseGempImageUrl(url) {
+    // Extract just the filename
+    const filename = url.split('/').pop();
+    
+    // Match patterns like:
+    // LOTR-EN01S290.0_card.jpg (standard)
+    // LOTR-ENV3S055.0_card.jpg (V-set)
+    // LOTR-EN03E106.1_card.jpg (errata)
+    const match = filename.match(/LOTR-EN(V?\d+)([A-Z])(\d+)\.(\d+)/);
+    
+    if (!match) {
+        console.warn('Could not parse image URL:', url);
+        return null;
+    }
+    
+    const rawSet = match[1];    // "01", "V3", "03"
+    const variant = match[2];   // "S", "E", etc.
+    const cardNum = match[3];   // "290", "055", "106"
+    const revision = match[4];  // "0", "1"
+    
+    // Determine if this is an errata version
+    const isErrata = variant === 'E' || parseInt(revision, 10) > 0;
+    
+    // Normalize set format to match VKIT keys
+    // Gemp V-sets: "V3" stays as "V3"
+    // Regular sets: "01" stays as "01"
+    let set = rawSet;
+    
+    // Pad card number to 3 digits if needed (VKIT uses "055" not "55")
+    const paddedCardNum = cardNum.padStart(3, '0');
+    
+    return { set, cardNum: paddedCardNum, isErrata };
+}
+
+/**
+ * Build the VKIT key prefix from parsed card info
+ * @param {Object} parsed - {set, cardNum, isErrata}
+ * @returns {string} Prefix like "01_290" or "V3_055"
+ */
+function buildVkitKeyPrefix(parsed) {
+    // VKIT keys look like "01_290 - Frodo, Son of Drogo"
+    // or "V3_055 - Raiding Schooner"
+    return `${parsed.set}_${parsed.cardNum}`;
+}
+
+/**
+ * Find a VKIT card key that matches the parsed Gemp card
+ * @param {Object} parsed - {set, cardNum, isErrata}
+ * @param {string} cardName - Card name from Gemp (for fallback matching)
+ * @returns {string|null} VKIT card key or null if not found
+ */
+function findVkitCardKey(parsed, cardName) {
+    if (!parsed) return null;
+    
+    const prefix = buildVkitKeyPrefix(parsed);
+    const allCardKeys = Object.keys(allCardNames);
+    
+    // Find all keys that start with this prefix
+    const matches = allCardKeys.filter(key => key.startsWith(prefix + ' - '));
+    
+    if (matches.length === 0) {
+        // Try without zero-padding
+        const altPrefix = `${parsed.set}_${parseInt(parsed.cardNum, 10)}`;
+        const altMatches = allCardKeys.filter(key => key.startsWith(altPrefix + ' - '));
+        if (altMatches.length > 0) {
+            return selectBestMatch(altMatches, parsed.isErrata);
+        }
+        return null;
+    }
+    
+    return selectBestMatch(matches, parsed.isErrata);
+}
+
+/**
+ * Select the best matching VKIT key based on errata status
+ * @param {Array} matches - Array of matching VKIT keys
+ * @param {boolean} isErrata - Whether we're looking for an errata version
+ * @returns {string} Best matching key
+ */
+function selectBestMatch(matches, isErrata) {
+    if (matches.length === 1) {
+        return matches[0];
+    }
+    
+    // Prefer errata version if isErrata, otherwise prefer non-errata
+    const errataMatch = matches.find(k => k.includes('(Errata)'));
+    const standardMatch = matches.find(k => !k.includes('(Errata)'));
+    
+    if (isErrata && errataMatch) {
+        return errataMatch;
+    }
+    if (!isErrata && standardMatch) {
+        return standardMatch;
+    }
+    
+    // Fallback to first match
+    return matches[0];
+}
+
+/**
+ * Add parsed cards to VKIT's selection list
+ * @param {Array} cards - Array of {count, imageUrl, name} objects
+ * @returns {Object} {added, notFound, missingCards}
+ */
+function addCardsToSelection(cards) {
+    let added = 0;
+    let notFound = 0;
+    const missingCards = [];
+    
+    cards.forEach(card => {
+        const parsed = parseGempImageUrl(card.imageUrl);
+        const vkitKey = findVkitCardKey(parsed, card.name);
+        
+        if (vkitKey && allCardNames[vkitKey]) {
+            // Add the card (count) times to the cardsForPdf array
+            for (let i = 0; i < card.count; i++) {
+                cardsForPdf.push(vkitKey);
+                added++;
+            }
+        } else {
+            notFound += card.count;
+            missingCards.push(`${card.name} (${card.imageUrl})`);
+        }
+    });
+    
+    // Rebuild the selection list from cardsForPdf
+    redrawSelectedCards();
+    
+    // Re-attach double-click handler
+    $("#selectedRemoves option").dblclick(function() {
+        removeSelectedCards();
+    });
+    
+    return { added, notFound, missingCards };
+}
+
+function clearSelection() {
+    cardsForPdf.length = 0;
+    redrawSelectedCards();
+}
+
+
 var allCardNames	= [];
 var isWhiteBorder = false;
 var size = "original";
 
 $(document).ready(function() {
+	
+	// Clear the import URL field on load
+    $('#gempDeckUrl').val('');
 	
 	$('input[type=radio][name=output]').change(function() {
 		if (this.value == 'pdf') {
